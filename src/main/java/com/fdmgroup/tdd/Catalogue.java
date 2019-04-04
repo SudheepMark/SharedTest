@@ -5,13 +5,22 @@ import java.util.ArrayList;
 public class Catalogue {
 
 	private ArrayList<Book> books = new ArrayList<Book>();
+	private ReadItemCommand readItemCommand;
+	private WriteItemCommand writeItemCommand;
+
+	public Catalogue(ReadItemCommand readItemCommand, WriteItemCommand writeItemCommand) {
+		this.readItemCommand = readItemCommand;
+		this.writeItemCommand = writeItemCommand;
+	}
 
 	public ArrayList<Book> getAllBooks() {
-		return books;
+		return readItemCommand.readAll();
+
 	}
 
 	public void addBook(Book book) {
-		books.add(book);
+		writeItemCommand.insertItem(book);
+		//books.add(book);
 	}
 
 	public void removeBook(int isbn) {
