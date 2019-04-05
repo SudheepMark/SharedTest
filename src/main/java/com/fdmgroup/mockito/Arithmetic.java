@@ -6,4 +6,5 @@ public interface Arithmetic {
 	public String getY() ;
 	public int multiplyByTwo(int number);
 	
+	
 }

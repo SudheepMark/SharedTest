@@ -32,28 +32,28 @@ public class CatalogueTest {
 		when(mockReadItemCommand.readAll()).thenReturn(mockListOfBooks);
 	}
 
-	@Test
+	@Test //1
 	public void test_GetAllBooks_ReturnsEmptyBookList_IfNoBooksAreInTheCatalogue() {
 		ArrayList<Book> books = catalogue.getAllBooks(); // Act
 		int numberOfBooks = books.size();
 		assertEquals(0, numberOfBooks);
 	}
 
-	@Test
+	@Test //2
 	public void test_GetAllBooks_CallsReadAllMethodOfReadItemCommand_WhenCalled() {
 		catalogue.getAllBooks();
 		verify(mockReadItemCommand).readAll();
 
 	}
 
-	@Test
+	@Test //3
 	public void test_GetAllBooks_ReturnsListOfBooksItReceivesFromReadAllMethodOfReadItemCommand_WhenCalled() {
 
 		assertEquals(mockListOfBooks, catalogue.getAllBooks()); // Assert
 
 	}
 	
-	@Test
+	@Test //4
 	public void test_AddBook_CallsInsertItemMethodOfWriteItemCommand_WhenCalled(){
 		catalogue.addBook(book);
 		verify(mockWriteItemCommand).insertItem(book);

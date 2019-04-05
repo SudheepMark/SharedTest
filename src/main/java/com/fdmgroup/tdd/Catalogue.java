@@ -20,7 +20,7 @@ public class Catalogue {
 
 	public void addBook(Book book) {
 		writeItemCommand.insertItem(book);
-		//books.add(book);
+		books.add(book);
 	}
 
 	public void removeBook(int isbn) {
