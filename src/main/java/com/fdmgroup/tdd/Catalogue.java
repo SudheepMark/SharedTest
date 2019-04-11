@@ -8,6 +8,10 @@ public class Catalogue {
 	private ReadItemCommand readItemCommand;
 	private WriteItemCommand writeItemCommand;
 
+	public Catalogue() {
+		
+	}
+	
 	public Catalogue(ReadItemCommand readItemCommand, WriteItemCommand writeItemCommand) {
 		this.readItemCommand = readItemCommand;
 		this.writeItemCommand = writeItemCommand;

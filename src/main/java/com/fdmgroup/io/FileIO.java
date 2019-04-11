@@ -130,7 +130,7 @@ public class FileIO {
 
 		System.out.println("Enter the email");
 		String mail = scanner.nextLine();
-
+		scanner.close();
 		try {
 			filewriter = new FileWriter(file, true); // appends to file or
 														// creates if not

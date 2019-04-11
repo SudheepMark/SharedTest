@@ -105,7 +105,8 @@ public class CollectionsExercise{
 		}
 		return (TreeSet<String>) words;
 	}
-	public double priorityQueue(double... numbers) {
+	
+	public Double[] priorityQueue(Double... numbers) {
 		Queue<Double> numberList  = new PriorityQueue<Double>(numbers.length, Collections.reverseOrder());
 	for(Double number: numbers){
 		numberList.add(number);
