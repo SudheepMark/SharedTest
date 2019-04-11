@@ -2,25 +2,22 @@ package com.fdmgroup.genericsAnswers;
 
 import java.util.ArrayList;
 
-public class Catalogue <T extends ItemType<V>, V extends Number> {
+public class Catalogue <T extends Item<V>, V extends Number> {
 
 	ArrayList<T> items = new ArrayList<T>();
 	
-	public ArrayList<T> getAllItems(){
-		return items;		
-	}
-	
-	public void addItems(T Item){
+	public void addItem(T Item){
 		items.add(Item);
 	}
 	
-	public void findItems(V id){
-		for (int count=0; count< items.size(); count++){
-			if (items.get(count).getId() == id){
-			System.out.println(items.get(count));
+	public T findItem(V id){
+		for (T item : items){
+			V itemId = item.getId();
+			if (itemId.equals(id)){
+				return item;
 			}
 		}
-		
+		return null;
 	}
 	
 }
