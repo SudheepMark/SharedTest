@@ -1,5 +1,6 @@
 package com.fdmgroup.AbstractClass;
 
+//child class of abstract class AccountHolder
 public class BusinessAccountHolder extends AccountHolder {
 	private String businessType;
 	private long vatNumber;

@@ -1,6 +1,7 @@
 package com.fdmgroup.AbstractClass;
 
 public abstract class AccountHolder {
+
 	private String name;
 	private long id;
 	private String postcode;

@@ -10,15 +10,15 @@ public abstract class Account {
 	}
 
 	public void addFunds(double amount) {
-		if(amount > 0){
-			this.balance+=amount;
+		if (amount > 0) {
+			this.balance += amount;
 		}
 	}
 
 	public double withdrawFunds(double amount) {
-		if(amount > 0){
-			if(amount <= this.balance){
-				this.balance-=amount;
+		if (amount > 0) {
+			if (amount <= this.balance) {
+				this.balance -= amount;
 				return amount;
 			}
 		}

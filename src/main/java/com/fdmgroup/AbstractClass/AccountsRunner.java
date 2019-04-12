@@ -7,6 +7,7 @@ public class AccountsRunner {
 
 	public static void main(String[] args) {
 
+		
 		BusinessAccountHolder businessAccountHolder1 = new BusinessAccountHolder();
 		BusinessAccountHolder businessAccountHolder2 = new BusinessAccountHolder();
 		PersonalAccountHolder personalAccountHolder1 = new PersonalAccountHolder();
