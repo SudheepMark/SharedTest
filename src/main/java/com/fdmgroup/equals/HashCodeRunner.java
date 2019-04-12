@@ -1,6 +1,6 @@
 package com.fdmgroup.equals;
 
-public class Runner {
+public class HashCodeRunner {
 
 	public static void main(String[] args) {
 		Trainee trainee1 = new Trainee("Brian","Java",7);

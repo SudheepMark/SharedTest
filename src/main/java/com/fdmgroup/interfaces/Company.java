@@ -24,6 +24,7 @@ public class Company {
 		employees.add(employee);
 	}
 
+	//method returns ArrayList employees
 	public ArrayList<IEmployee> getAllEmployees() {
 
 		return employees;

@@ -5,32 +5,32 @@ public class FactoryEmployee implements IEmployee {
 	int salary;
 
 	public void clockIn() {
-		// TODO Auto-generated method stub
+		// own method
 		System.out.println(name + " has clocked in..");
 	}
 
 	public void doWork() {
-		// TODO Auto-generated method stub
+		// method from interface
 		System.out.println(name + " is doing Factory work");
 	}
 
 	public String getName() {
-		// TODO Auto-generated method stub
+		// method from interface
 		return name;
 	}
 
 	public void setName(String name) {
-		// TODO Auto-generated method stub
+		// method from interface
 		this.name = name;
 	}
 
 	public int getSalary() {
-		// TODO Auto-generated method stub
+		// method from interface
 		return salary;
 	}
 
 	public void setSalary(int salary) {
-		// TODO Auto-generated method stub
+		// method from interface
 		this.salary = salary;
 	}
 

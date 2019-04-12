@@ -1,6 +1,6 @@
 package com.fdmgroup.ClassInheritance;
 
-public class Runner {
+public class ManagerRunner {
 
 	public static void main(String[] args) {
 

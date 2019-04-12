@@ -1,6 +1,7 @@
 package com.fdmgroup.interfaces;
 
 public interface IEmployee {
+	
 	public void doWork();
 
 	public String getName();

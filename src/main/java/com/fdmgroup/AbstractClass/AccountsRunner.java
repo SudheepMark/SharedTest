@@ -3,7 +3,7 @@ package com.fdmgroup.AbstractClass;
 import java.util.ArrayList;
 
 
-public class Runner {
+public class AccountsRunner {
 
 	public static void main(String[] args) {
 

@@ -15,8 +15,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class CollectionsExercise{
-	
+public class CollectionsExercise {
 
 	public Set<String> removeDuplicates(String... names) {
 		Set<String> name = new HashSet<String>(Arrays.asList(names));
@@ -86,36 +85,36 @@ public class CollectionsExercise{
 	public LinkedList<Integer> reverseList(LinkedList<Integer> list1) {
 
 		LinkedList<Integer> list2 = new LinkedList<Integer>();
-		//System.out.println(list1.size());
+		// System.out.println(list1.size());
 		for (int i = list1.size() - 1; i >= 0; i--) {
 			list2.add(list1.get(i));
 		}
 		for (int i = 0; i < list2.size(); i++) {
 			System.out.println(list2.get(i));
 		}
-		
+
 		return list2;
 	}
 
 	public TreeSet<String> tokenize(String str) {
-		//List<String> list = Arrays.asList(str.split(" "));
+		// List<String> list = Arrays.asList(str.split(" "));
 		Set<String> words = new TreeSet<String>(Arrays.asList(str.split(" ")));
 		for (String string : words) {
 			System.out.println(string);
 		}
 		return (TreeSet<String>) words;
 	}
-	
+
 	public Double[] priorityQueue(Double... numbers) {
-		Queue<Double> numberList  = new PriorityQueue<Double>(numbers.length, Collections.reverseOrder());
-	for(Double number: numbers){
-		numberList.add(number);
-	}
-	for(Double number: numbers){
-		System.out.println(numberList.poll());
-	}
+		Queue<Double> numberList = new PriorityQueue<Double>(numbers.length, Collections.reverseOrder());
+		for (Double number : numbers) {
+			numberList.add(number);
+		}
+		for (Double number : numbers) {
+			System.out.println(numberList.poll());
+		}
 		return numbers;
-		
+
 	}
 
 }

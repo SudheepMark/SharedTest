@@ -8,7 +8,7 @@ public class Car extends Vehicle {
 	}
 	
 	public void brake() {
-		// TODO Auto-generated method stub
+		// own method
 		System.out.println("Car is braking..");
 	}
 
